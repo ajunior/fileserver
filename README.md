@@ -1,10 +1,10 @@
 # fileserver
 
-**fileserver** é um servidor de arquivos baseado em HTTP, desenvolvido em [Node.js](http://nodejs.org). 
+**fileserver** é um servidor de arquivos baseado em HTTP, desenvolvido em [Node.js](http://nodejs.org).
 
 ### Motivação
 
-A Necessidade de compartilhar arquivos usando um servidor que só tem acesso externo a Internet pela porta 80.
+A necessidade de compartilhar arquivos usando um servidor que só tem acesso externo a Internet pela porta 80.
 
 ## Requisitos
 
@@ -28,17 +28,17 @@ $ git clone https://github.com/ajunior/fileserver.git
 
 ## Iniciando
 
-Acesse o diretório onde o aplicativo foi clonado ou descompactado e execute a aplicação, conforme abaixo:
+Acesse o diretório onde o aplicativo foi clonado ou descompactado e execute a aplicação, conforme exemplo abaixo:
 
 ```sh
 $ node app.js --rootdir=/path/to/dir
 ```
 
-Em seguida, usando um navegador de arquivos, acesse a pasta 'front-end' dentro do diretório do aplicativo e abra o arquivo 'indes.html' em qualquer browser.
+Em seguida, usando um navegador de arquivos, acesse a pasta 'front-end' dentro do diretório do aplicativo e abra o arquivo 'index.html' em qualquer browser.
 
 ## Protótipo
 
-<img src="assets/screenshot.png" alt="Screenshot" width="50%" height="50%" />
+<img src="assets/screenshot.png" alt="Screenshot" style="margin: 0 auto" width="70%" height="70%" />
 
 ## Recursos da API
 
