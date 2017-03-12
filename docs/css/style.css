@@ -65,11 +65,12 @@ footer .lead {
 #running {
     margin-top: 30px;
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
 #init {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #autores {

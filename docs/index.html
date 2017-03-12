@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js " integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn " crossorigin="anonymous "></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
 </head>
 <body>
     <!--
@@ -23,9 +27,9 @@
             <!-- Menu de opções -->
             <div id="fs-menu" class="navbar-toggler-right">
                 <ul class="navbar-nav">
-                    <li class="nav-item text-link fs-menu-buttons"><a href="#install"><i class="fa fa-list-ul" aria-hidden="true"></i> Instalação</a></li>
-                    <li class="nav-item text-link fs-menu-buttons"><a href="#running"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Inicialização</a></li>
-                    <li class="nav-item text-link fs-menu-buttons"><a href="#autores"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Autores</a></li>
+                    <li class="nav-item text-link fs-menu-buttons"><a id="linkInstall" href="#install"><i class="fa fa-list-ul" aria-hidden="true"></i> Instalação</a></li>
+                    <li class="nav-item text-link fs-menu-buttons"><a id="linkRunning" href="#running"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Inicialização</a></li>
+                    <li class="nav-item text-link fs-menu-buttons"><a id="linkAutores" href="#autores"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Autores</a></li>
                 </ul>
             </div>
         </nav>
@@ -100,6 +104,9 @@
                 <div id="init" class="text-center">
                     <code class="lead text-center">$ node app.js rootdir=/path/to/dir</code>
                 </div>
+                <p class="lead text-center text-white">
+                    Em seguida, acesso o diretório <kbd>front-end</kbd> e abra o arquivo <kbd>index.html</kbd> no seu browser favorito
+                </p>
             </div>
         </div>
     </section>
@@ -164,6 +171,28 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        (function($) {
+            $('#linkInstall').click(function() {
+                $('html, body').animate({
+                    'scrollTop':   $('#install').offset().top
+                }, 2000);
+            });
+
+            $('#linkRunning').click(function() {
+                $('html, body').animate({
+                    'scrollTop':   $('#running').offset().top
+                }, 2000);
+            });
+
+            $('#linkAutores').click(function() {
+                $('html, body').animate({
+                    'scrollTop':   $('#autores').offset().top
+                }, 2000);
+            });
+        })(jQuery);
+    </script>
 
 </body>
 </html>
