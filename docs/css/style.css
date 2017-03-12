@@ -57,3 +57,30 @@ footer {
 footer .lead {
     font-size: 12px;
 }
+
+#download-zipped {
+    margin-top: 15px;
+}
+
+#running {
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+#init {
+    margin-top: 50px;
+}
+
+#autores {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#imgs {
+    margin-top: 30px;
+}
+
+.txt-autores {
+    margin-top: 20px;
+}

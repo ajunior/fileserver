@@ -23,10 +23,9 @@
             <!-- Menu de opções -->
             <div id="fs-menu" class="navbar-toggler-right">
                 <ul class="navbar-nav">
-                    <li class="nav-item text-link fs-menu-buttons"><a href="#" data-toggle="modal" data-target="#exampleModalLong"><i class="fa fa-life-ring" aria-hidden="true"></i> Suporte</a></li>
-                    <li class="nav-item text-link fs-menu-buttons"><a href="#" data-toggle="modal" data-target="#exampleModalUpload"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload</a></li>
-                    <li class="nav-item text-link fs-menu-buttons"><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a></li>
-                    <li class="nav-item text-link fs-menu-buttons"><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i> Contato</a></li>
+                    <li class="nav-item text-link fs-menu-buttons"><a href="#install"><i class="fa fa-list-ul" aria-hidden="true"></i> Instalação</a></li>
+                    <li class="nav-item text-link fs-menu-buttons"><a href="#running"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Inicialização</a></li>
+                    <li class="nav-item text-link fs-menu-buttons"><a href="#autores"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Autores</a></li>
                 </ul>
             </div>
         </nav>
@@ -41,13 +40,113 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <h1 class="display-3">fileserver</h1>
-                    <p class="lead">É a simple file server HTTP-based made with <a href="https://nodejs.org">Node.js</a>.
-                    <hr class="my-4">
-                    <p>Projeto desenvolvido para disciplina de Linguagem Script (JS) do curso superior de Sistema para Internet do <a href="https://www.ifpb.edu.br">Instituto Federal da Paraíba</a>.</p>
                     <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        Servidor de arquivos <em>minimalista</em> baseado em HTTP, desenvolvido em <strong>Node.js</strong>,
+                        motivado pela necessidade de compartilhar arquivos usando um computador que só tem acesso externo a Internet pela porta 80.
+                    </p>
+                    <p class="lead">
+                        As principais funcionalidades incluem <strong>navegação</strong> entre diretórios, <strong>download</strong> e <strong>upload</strong> de arquivos.
+                    </p>
+                    <hr class="my-4">
+                    <p>Projeto desenvolvido para disciplina de Linguagem Script (JS) do curso superior de <a href="https://estudante.ifpb.edu.br/cursos/39">Sistema para Internet</a> do <a href="https://www.ifpb.edu.br">Instituto Federal da Paraíba</a>.</p>
+                    <p>O projeto é open source e desenvolvido sob a Licença MIT.</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="https://github.com/ajunior/fileserver" role="button"><i class="fa fa-github" aria-hidden="true"></i> Código Fonte</a>
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="install" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h3>Instalação</h3>
+                <p class="lead">A instalação do fileserver é simples e pode ser feita de duas formas:</p>
+                <div class="container">
+                    <h5>Git: clonando o repositório</h5>
+                    <p>No terminal, acesse o diretório onde deseja clonar o aplicativo e execute o comando:</p>
+                    <code>$ git clone https://github.com/ajunior/fileserver.git</code>
+                </div>
+                <div id="download-zipped" class="container">
+                    <h5>Download: baixando o repositório compactado</h5>
+                    <p>Baixe e descompacte no diretório que desejar</p>
+                    <a class="btn btn-outline-primary" href="https://github.com/ajunior/fileserver/archive/master.zip">Baixar</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h3>Requerimentos</h3>
+                <p class="lead">O principal requisito para o funcionamento do aplicativo é ter o <a href="https://nodejs.org">Node.js</a> instalado e funcionando.</p>
+                <p class="lead">Algumas bibliotecas também são necessárias:</p>
+                <ul>
+                    <li><a href="https://momentjs.com/">Moment.js</a></li>
+                    <li><a href="https://kryogenix.org/code/browser/sorttable/">Sorttable</a></li>
+                    <li><a href="">wget-improved</a></li>
+                    <li><a href="">dropzone.js</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="running" class="container-fluid bg-primary">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h3 class="text-center text-white">Inicialização</h3>
+                <p class="lead text-center text-white">A inicialização do fileserver é simples, basta acessar o diretório do aplicativo e digitar o comando abaixo</p>
+                <div id="init" class="text-center">
+                    <code class="lead text-center">$ node app.js rootdir=/path/to/dir</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="autores" class="container-fluid bg-faded">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h3 class="text-center">Autores</h3>
+                <p class="lead text-center">
+                    O projeto foi desenvolvido por Adjamilton Junior, aluno de Engenharia Elétrica, e <br>Rayssa Freitas, aluna do curso de Sistemas para Internet.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="imgs" class="row">
+                <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                    <div class="card card-block">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <img class="rounded" src="img/jr3.jpg" alt="Screenshot" style="margin: 0 auto" width="100%" height="100%">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                                        <h5 class="txt-autores">Adjamilton Junior</h5>
+                                        <p class="lead text-primary"><i class="fa fa-envelope-o" aria-hidden="true"></i> jr@ieee.org
+                                        <br>
+                                        <i class="fa fa-github-square" aria-hidden="true"></i> <a href="https://github.com/ajunior">ajunior</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                        <img class="rounded" src="img/rayssa.jpg" alt="Screenshot" style="margin: 0 auto" width="100%" height="72%">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                                        <h5 class="txt-autores">Rayssa Freitas</h5>
+                                        <p class="lead text-primary"><i class="fa fa-envelope-o" aria-hidden="true"></i> rayssafreitas@live.com
+                                            <br>
+                                            <i class="fa fa-github-square" aria-hidden="true"></i> <a href="https://github.com/ajunior">rayssafreitas</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>
             </div>
         </div>
     </section>
@@ -57,7 +156,7 @@
         <div class="row ">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <p class="lead text-center">
-                    fileserver is <a href="http://github.com/ajunior/fileserver ">open source</a> and made with <i class="fa fa-heart-o text-primary" aria-hidden="true "></i>
+                    fileserver is <a href="http://github.com/ajunior/fileserver">open source</a> and made with <i class="fa fa-heart-o text-primary" aria-hidden="true"></i>
                 </p>
             </div>
         </div>
