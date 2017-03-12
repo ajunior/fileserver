@@ -12,7 +12,7 @@ O principal requisito para o funcionamento do aplicativo é ter o **Node.js** in
 - [Moment.js](https://momentjs.com/)
 - [wget-improved](https://github.com/bearjaws/node-wget).
 - [Sorttable](https://kryogenix.org/code/browser/sorttable/)
-
+- [DropZone.js](http://www.dropzonejs.com/)
 ## Funcionalidades
 
 - Visualizar o conteúdo de diretórios;
