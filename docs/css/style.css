@@ -1,0 +1,59 @@
+#brand-auto {
+    font-size: 24px;
+    color: #00b5ec;
+}
+
+#url {
+    width: 600px;
+}
+
+#files {
+    margin-top: 100px;
+}
+
+.stylish-input-group .input-group-addon {
+    background: white !important;
+}
+
+.stylish-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #ccc;
+}
+
+.stylish-input-group button {
+    border: 0;
+    background: transparent;
+}
+
+#search {
+    width: 285px;
+}
+
+#status-bar {
+    font-size: 12px;
+}
+
+.table {
+    /*font-family: 'courier new';*/
+    font-size: 14px;
+}
+
+.fs-menu-buttons {
+    margin-left: 10px;
+}
+
+header nav a:hover,
+header nav a:visited,
+header nav a:active,
+header nav a:link {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+footer .lead {
+    font-size: 12px;
+}
