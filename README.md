@@ -64,4 +64,4 @@ Rayssa Freitas | rayssafreitas@live.com | @rayssafreitas
 
 ## Licença
 
-O desenvolvido deste projeto é regido sob a licença [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+O desenvolvido deste projeto é regido sob a [licença MIT](https://opensource.org/licenses/MIT) e o conteúdo sob [Creative Commons BY-SA 3.0](https://creativecommons.org/).
