@@ -8,11 +8,13 @@ var express = require('express'); // call express
 var app = express(); // define our app using express
 var bodyParser = require('body-parser');
 var fs = require('fs');
+var cors = require('cors');
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 
 var port = process.env.PORT || 8080; // set our port
 
@@ -25,7 +27,7 @@ var router = express.Router(); // get an instance of the express Router
 //     res.json({ message: 'hooray! welcome to our api!' });
 // });
 
-router.get('/', function(req, res) {
+router.get('/', cors(), function(req, res) {
     var path = '.';
     fs.readdir(path, function(err, items) {
         let stats = [];
